@@ -1,0 +1,146 @@
+/* Style for header */
+header {
+    font-weight: 300;
+    font-family: "monospace"serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(251, 247, 247);
+    color: #070707;
+    position: relative;
+    font-size: large;
+   
+  }
+  
+  /* Style for navigation */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+  nav ul.active{
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  nav ul li a {
+    color: #0b0b0b;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Style for toggle bar */
+  .toggle-bar {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+    z-index: 100;
+  }
+  @media only screen and (max-width: 768px) {
+    .toggle-bar {
+      display: block;
+    }
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #444;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 10px;
+    }
+  }
+ .font-primary{
+  font-weight: 100px;
+    
+  }
+  .skills{
+    color: #00abae;
+  }
+/*****
+About
+*****/
+
+#about{
+margin: 60px auto;
+max-width: 400px;
+text-align: center;
+}
+
+#about img{
+  border-radius: 50px;
+  width: 100px;
+  margin-bottom: 10px;
+  width: 70px;
+  height: 90px;
+}
+
+#about .name{
+font-size: 19px;
+}
+#about .vocation{
+  font-size: 17px;
+  color: #A8ABAB;
+  margin-bottom: 10px;
+}
+#about .skills{
+  font-size: 14px;
+  color: #00ABAE;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+#about .email a{
+  margin-top: 14px;
+  font-size: 15px;
+  color: #E8A87C;
+  text-decoration: none;
+}
+.font-primary{
+  color: #00abae; 
+  font-size: 20px;
+  
+}
+#about .icons{
+  margin-top: 20px;
+  font-size: 30px;
+}
+#about .icons a{
+  color: #070707;
+  margin-left: 12px;
+}
+
+
+
+  /*******************
+  PROJECT
+  ********************/
+  #project{
+    margin: 40px auto;
+    text-align: center;
+    font-size: 20px;
+    max-width: 40px;
+    width: 80%;
+    }
+  
+  .font-project{
+    color: #00abae; 
+    font-size: 20px;
+    }
